@@ -1,0 +1,99 @@
+.gridcontainer {
+
+  display: grid;
+  grid-template-areas:
+  "head    head   head    nav   nav"
+  ".        main   main   main    ."
+  ".        text     text  .      ."
+  ".        team    team   team   ."
+  " .       team1    team1  team1 . "
+  ".        team2     team2  team2 . "
+    ".        text1     text1  .      ."
+  ".        service   service service ."
+  ".        service1   service1 service1 ."
+  ".        service2   service2 service2 ."
+  ".        service3   service3 service3 ."
+  " .       work        work    work  ."
+  ".        text2     text2  .      ."
+
+  " .        map       map     form . ";
+
+
+  grid-template-columns: 15% auto auto auto 15% ;
+  grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
+
+
+background: grey;
+}
+
+
+.logo {
+  grid-row: 1/2;
+  grid-area: head;
+}
+
+.nav {
+  grid-area: nav;
+  grid-column: 4 / 6;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.landing {
+
+  grid-area: main;
+  background: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+}
+
+.tit {
+  grid-area: text;
+}
+
+.megan {
+
+grid-area: team;
+}
+
+.ste {
+  grid-area: team1;
+}
+
+.jon {
+  grid-area: team2;
+}
+
+.grid-text1 {
+  grid-area: text1;
+}
+
+.guitar {
+  grid-area: service;
+}
+.rec {
+  grid-area: service1;
+}
+.vox {
+  grid-area: service2;
+}
+.perf {
+  grid-area:service3;
+}
+#our-work {
+  grid-area: work;
+}
+#contact-us {
+  grid-area: form;
+}
+#googleMap {
+  grid-area: map;
+}
+
+.cont {
+  grid-area: text2;
+}

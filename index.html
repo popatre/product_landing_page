@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles.css">
     <title> JJMusic </title>
 
   </head>
 
+
+
      <body>
+      <div class="gridcontainer">
+
+       <div class="logo">
+
         <header id="header">
 
 
            <img src="https://yt3.ggpht.com/ytc/AAUvwnih4lbS76K0u8JIjp2TKqyVv2jYpiYxh5myF_0hVQ=s900-c-k-c0x00ffffff-no-rj" id="header-img" alt="JJMusic logo">
+        </div>
 
+        <div class="nav">
             <nav id="nav-bar">
               <ul>
                 <li class="nav-link"> <a href="#main"> Home </a> </li>
                 <li class="nav-link"> <a href="#team"> Meet the Team </a> </li>
                <li class="nav-link"> <a href="#services"> Services </a> </li>
                 <li class="nav-link"> <a href="#our-work">Our Work </a> </li>
-                <li class="nav-link"> <a href="main">Page 5 </a> </li>
+              
               </ul>
             </nav>
+        </div>
 
         </header>
 
-     <body>
+
+     <div class="landing">
 
        <h1 id="title"> Welcome to JJMusic </h1>
           <h3> The number one place for remote music lessons </h3>
@@ -44,28 +57,68 @@
 
 
           </main>
+      </div>
 
-
-            <div id="team">
+           <div class="tit">
+             <section id="team">
 
               <h3> Meet the Team</h3>
+          </div>
+
+          <div class="megan">
+
+
+              <img id="img-meg" src="https://assets.locable.com/r/small/a4c15938-8b01-41e3-93e6-9d27df02fbc4/Megan%20T%20Smith.jpg" >
               <p> Megan T. Smith is a veteran of the stage and a seasoned educator and encourager for kids in the arts. Megan is a signed recording artist with BMR Nashville whose debut single hit country radio nationwide. She graduated from the University of Redlands with her Bachelor of Arts in English Literature with a focus on Vocal Performance and Public Relations; for the last decade she has had the privilege of performing on stages around the world. She has starred in one of the longest running shows on the Las Vegas Strip, in various theatrical shows, cruise lines, and has performed at CMA Fest, iHeart Radio’s Listener Lounge, and much more. She has worked with some of the very best in the industry and has a knack for creatively inspiring and encouraging vocalists as she implements her wealth of musical knowledge throughout their development. </p>
+          </div>
 
+          <div class="ste">
+              <img src="https://assets.locable.com/r/small/f48961b8-8b13-46be-bbd2-6f1fe62a682c/drums%20Steven%20Martin%20geotag.jpg" id="img-ste">
               <p> Steven Martin is an Award-Winning Studio Drummer, Touring Drummer, & Teacher. He's performed with Grammy Winners, CMA Award Winners, an Emmy Award Winner, a Country Billboard Artist, a #1 Hit Pop Artist, & opened for dozens of international bands. He's opened for Marilyn Manson, The Offspring, Black Label Society, Bad Religion, Steve Aoki, Rodney Atkins, Quiet Riot, Burning Rain, Metalachi, Chuck Ragan & many others. He's studied extensively with Musicians & Teachers such as Ed Metts Jr. (Count Basie Orchestra), Santiago Sabado (Sacramento State Mandarins), Glen Sabado (International Touring/Session Drummer), Dr. Steve Lishman (American River College Jazz Professor),  Dr. Merlyn Van Regenmorter (Commercial Music / Recording / World Music Professor),  Dr. Dyne Eifertsen (American River College Jazz Professor),  Eric Hernandez (Blue Devils Drum Corps International) & many others.</p>
-
+          </div>
+          <div class="jon">
+              <img src="https://assets.locable.com/r/small_fixed/8393c8c4-5691-4b1b-b544-87deba4b8201/Jonathan%20pic.jpg" id="img-jon">
               <p> Jonathan is a well rounded instrumentalist. There are very few instruments that he does not teach. Jonathan has experience teaching all ages and skill levels. </p>
+          </div>
+        </section>
 
+
+
+          <div class="grid-text1">
+            <section id="services">
+                  <h2> We offer the following services </h2>
+          </div>
+
+           <div class="guitar">
+                <h3>We're excited to focus primarily on guitar and ukulele lessons.</h3>
+                <p> We believe that kids should learn how to read music and play by ear. Sheet music provides the fundamentals they'll need to grow while playing by ears makes learning music fun and something they can do anywhere.</p>
             </div>
 
+            <div class="rec">
+                <h3> Recording Studio/ Music Producing</h3>
+                <p> Whether you are an artist or a band looking for a music producer, Jon Jimmerson can help produce your work.
+                   He offers mentorship to up and coming artists and bands.
+                   If you are an artist and need guidance on enhancing or starting your music career,
+                   look no further. Jon can help make your aspirations and goals come true.  </p>
+           </div>
 
+           <div class="vox">
+                <h3> Singing and vocal lessons</h3>
+                <p> At our studio, we have all the equipment necessary to learn how to sing.
+                 Our students sing through a PA system and are accompanied by live instrumentation.</p>
+          </div>
 
-            <div id="services">
-
-            </div>
+          <div class="perf">
+                 <h3> Live Performance and Music </h3>
+                 <p> Wether you are interested in hiring a musician for live background music or performance at your event or a band in need of a substitute player,
+                   look no further. I will perform any type of genre that you need for your event or band. </p>
+          </div>
+            </section>
 
 
 
             <div id="our-work">
+              <h4> Below is a selection of our work and services</h4>
 
               <iframe id="jjvid" width="320" height="240" src="https://www.youtube.com/embed/CQfZsEdDmDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -77,8 +130,8 @@
           </div>
 
 
-
-            <div id ="contact us">
+            <div class="cont"> <h4>Contact us</h4> </div>
+            <div id ="contact-us">
                <h5> Use the contact form below to contact us for more information </h5>
                   <form id="form" action="https://www.freecodecamp.com/email-submit">
                       <fieldset>
@@ -108,12 +161,26 @@
 
 
                  </form>
+              </div>
 
-            </div>
+                 <div id="googleMap" style="width:100%;height:400px;"></div>
+
+                 <script>
+                 function myMap() {
+                 var mapProp= {
+                   center:new google.maps.LatLng(51.508742,-0.120850),
+                   zoom:5,
+                 };
+                 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                 }
+                 </script>
+
+                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMUDrhIcnodqssOE-RPIa_si31z7hlQ_I&callback=myMap"></script>
 
 
 
 
+         </div>
      </body>
 
 
@@ -121,6 +188,7 @@
    <footer>
 
    </footer>
+
 
 
 
