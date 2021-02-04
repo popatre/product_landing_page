@@ -114,3 +114,35 @@ flex-wrap:wrap;
   border-radius: 50px;
   box-shadow: 5px 10px 18px red;;
 }
+.flexserv {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px auto;
+  min-width: 250px;
+  max-width:800px;
+  gap:10px;
+  flex-wrap: wrap;
+}
+
+.flexserv h3, h4, p {
+ display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flexvids {
+  display:flex;
+  flex-wrap: wrap;
+  min-width: 250px;
+  max-width: 100%;
+  justify-content: space-around;
+}
+
+.flexvids iframe, video {
+  max-height: 100%;
+  max-width: 100%;
+  flex: 0 2 320px;
+  flex-wrap: wrap;
+}

@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="styles.css">
+
+
+     <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+      <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+
+
     <title> JJMusic </title>
 
   </head>
@@ -86,7 +92,7 @@
 
           <div class="grid-text1">
             <section id="services">
-                  <h2> We offer the following services </h2>
+                  <h2 class="servtitle"> We offer the following services </h2>
           </div>
 
           <div class="gridicons">
@@ -99,49 +105,67 @@
              <img id="dj" src="images/trumpet.png">
           </div>
 
-           <div class="guitar">
+
+
+          <div class="guitar">
+              <div class="flexserv">
                 <h3>We're excited to focus primarily on guitar and ukulele lessons.</h3>
                 <p> We believe that kids should learn how to read music and play by ear. Sheet music provides the fundamentals they'll need to grow while playing by ears makes learning music fun and something they can do anywhere.</p>
+              </div>
             </div>
 
             <div class="rec">
+              <div class="flexserv">
                 <h3> Recording Studio/ Music Producing</h3>
                 <p> Whether you are an artist or a band looking for a music producer, Jon Jimmerson can help produce your work.
                    He offers mentorship to up and coming artists and bands.
                    If you are an artist and need guidance on enhancing or starting your music career,
                    look no further. Jon can help make your aspirations and goals come true.  </p>
+              </div>
            </div>
 
-           <div class="vox">
+          <div class="vox">
+             <div class="flexserv">
                 <h3> Singing and vocal lessons</h3>
                 <p> At our studio, we have all the equipment necessary to learn how to sing.
                  Our students sing through a PA system and are accompanied by live instrumentation.</p>
+            </div>
           </div>
 
           <div class="perf">
+            <div class="flexserv">
                  <h3> Live Performance and Music </h3>
                  <p> Wether you are interested in hiring a musician for live background music or performance at your event or a band in need of a substitute player,
                    look no further. I will perform any type of genre that you need for your event or band. </p>
+            </div>
           </div>
+
             </section>
 
 
 
             <div id="our-work">
-              <h4> Below is a selection of our work and services</h4>
+              <div class="flexserv">
+                 <h4> Below is a selection of our work and services</h4>
+              </div>
 
-              <iframe id="jjvid" width="320" height="240" src="https://www.youtube.com/embed/CQfZsEdDmDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="flexvids">
 
-              <video id="video" width="320" height="240" controls>
-               <source src="videos/james.mov" type="video/quicktime">
-                 <source src="videos/james.webm" type="video/webm">
+                       <iframe id="jjvid" width="320" height="240" src="https://www.youtube.com/embed/CQfZsEdDmDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-             </video>
+                        <video id="video" width="320" height="240" controls>
+                         <source src="videos/james.mov" type="video/quicktime">
+                         <source src="videos/james.webm" type="video/webm">
+                        </video>
+
+                        <iframe width="320" height="240" src="https://www.youtube.com/embed/4ZejDw1ZY9U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
           </div>
 
 
             <div class="cont"> <h4>Contact us</h4> </div>
-            <div id ="contact-us">
+            
+                     <div id="contact-us">
                <h5> Use the contact form below to contact us for more information </h5>
                   <form id="form" action="https://www.freecodecamp.com/email-submit">
                       <fieldset>
@@ -173,19 +197,21 @@
                  </form>
               </div>
 
-                 <div id="googleMap" style="width:100%;height:400px;"></div>
+              <div id='map' style='width: 400px; height: 300px;'></div>
+               <script>
+                 mapboxgl.accessToken = 'pk.eyJ1IjoicG9wYXRyZSIsImEiOiJja2tyMW5zaWQwMDh6MnVwaWExbHFiY3dvIn0.2Lsrxy1fDf5MMotV9weR3Q';
+                 var map = new mapboxgl.Map({
+                   container: 'map',
+                  style: 'mapbox://styles/mapbox/streets-v11',
+                  center: [-2.9916, 53.4084],
+                   zoom: 8
 
-                 <script>
-                 function myMap() {
-                 var mapProp= {
-                   center:new google.maps.LatLng(51.508742,-0.120850),
-                   zoom:5,
-                 };
-                 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-                 }
-                 </script>
+                   });
 
-                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMUDrhIcnodqssOE-RPIa_si31z7hlQ_I&callback=myMap"></script>
+                   var marker = new mapboxgl.Marker()
+                    .setLngLat([-3.026110, 53.477460])
+                    .addTo(map);
+                  </script>
 
 
 
@@ -196,7 +222,9 @@
 
 
    <footer>
-
+       <div class="footer">
+         <h5> Designed by JJMcGuire </h5>
+       </div>
    </footer>
 
 

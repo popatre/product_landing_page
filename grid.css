@@ -8,19 +8,20 @@
   ".        team    team   team   ."
   " .       team1    team1  team1 . "
   ".        team2     team2  team2 . "
-    ".        text1     text1  .      ."
+    ".        .     text1  text1      ."
     ".       icon      icon    icon ."
   ".        service   service service ."
   ".        service1   service1 service1 ."
   ".        service2   service2 service2 ."
   ".        service3   service3 service3 ."
   " .       work        work    work  ."
-  ".        text2     text2  .      ."
+  ".        .     text2  .      ."
 
-  " .        map       map     form . ";
+  " .        map       map     form . "
+  " footer   footer    footer  footer footer";
 
 
-  grid-template-columns: 15% auto auto auto 15% ;
+  grid-template-columns: 10% auto auto auto 10% ;
   grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
 
 
@@ -70,6 +71,7 @@ grid-area: team;
 
 .grid-text1 {
   grid-area: text1;
+  padding: 30px;
 }
 
 .gridicons {
@@ -78,6 +80,7 @@ grid-area: team;
 
 .guitar {
   grid-area: service;
+  max-width: 100%;
 }
 .rec {
   grid-area: service1;
@@ -94,10 +97,21 @@ grid-area: team;
 #contact-us {
   grid-area: form;
 }
-#googleMap {
+#map {
   grid-area: map;
 }
 
 .cont {
   grid-area: text2;
+  display: flex;
+  min-width: 250px;
+  max-width: 100%;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+.footer {
+  grid-area: footer;
+  display:flex;
+  justify-content: flex-end;
 }
