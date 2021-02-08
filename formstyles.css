@@ -1,0 +1,80 @@
+
+
+
+.flexform li {
+   display: flex;
+   flex-wrap: wrap;
+   align-items:center;
+
+
+}
+
+.flexform > li > label,
+.flexform li p {
+  flex: 1 0 100px;
+  max-width: 100px;
+  margin-bottom: 20px;
+  padding: 8px;
+  font-weight: 200;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.flexform li input:not([type='checkbox']),
+.flexform li textarea {
+  padding: 15px;
+  border: none;
+  flex: 1 0 90px;
+  margin-bottom: 10px;
+}
+
+
+
+
+.flexform > li > label + *,
+ {
+  flex: 1 0 200px;
+}
+
+.flexform #submit {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+.flexform #submit:hover {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: red;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+
+fieldset {
+    border: 0;
+}
+
+#contact-us {
+   margin-bottom: 60px;
+   background-color: red;
+   border-radius: 20px;
+   box-shadow:12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+#contact-us h5 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+<!-- tutorial - https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767 -->
