@@ -49,32 +49,34 @@ flex-wrap:wrap;
 
 .megan {
   display: flex;
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .megan p {
-  flex: 0 0 70%;
+  flex: 0 1 70%;
   flex-wrap: wrap;
+
 }
 
 .ste {
   display: flex;
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   justify-content: space-between;
   padding-top: 30px;
   flex-wrap: wrap;
 }
 
 .ste p {
-  flex: 0 0 70%;
+  flex: 0 1 70%;
   flex-wrap: wrap;
+
 }
 
 .jon {
   display: flex;
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   justify-content: space-between;
   padding-top: 30px;
   align-items: center;
@@ -84,6 +86,7 @@ flex-wrap:wrap;
 .jon p {
   flex: 0 0 70%;
   flex-wrap: wrap;
+
 }
 
 .gridicons {
@@ -145,4 +148,24 @@ flex-wrap:wrap;
   max-width: 100%;
   flex: 0 2 320px;
   flex-wrap: wrap;
+}
+
+#map {
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  max-width:500px;
+  max-height: 350px;
+  display:flex;
+  flex-wrap: wrap;
+  flex: 0 4 500px;
+}
+
+.cont {
+  display:flex;
+  justify-content: center;
+}
+
+#main {
+  max-width: 70%;
 }

@@ -4,18 +4,18 @@
   grid-template-areas:
   "head    head   head    nav   nav"
   ".        main   main   main    ."
-  ".        text     text  .      ."
+  ".        text     text  text      ."
   ".        team    team   team   ."
   " .       team1    team1  team1 . "
   ".        team2     team2  team2 . "
-    ".        .     text1  text1      ."
+    ".        text1     text1  text1      ."
     ".       icon      icon    icon ."
   ".        service   service service ."
   ".        service1   service1 service1 ."
   ".        service2   service2 service2 ."
   ".        service3   service3 service3 ."
   " .       work        work    work  ."
-  ".        .     text2  .      ."
+  ".        text2     text2  text2      ."
 
   " .        map       map     form . "
   " footer   footer    footer  footer footer";
@@ -23,9 +23,8 @@
 
   grid-template-columns: 10% auto auto auto 10% ;
   grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
-
-
-background: grey;
+   background: grey;
+   row-gap: 10px;
 }
 
 
@@ -55,6 +54,8 @@ background: grey;
 
 .tit {
   grid-area: text;
+  display:flex;
+  justify-content: center;
 }
 
 .megan {
@@ -72,6 +73,8 @@ grid-area: team;
 .grid-text1 {
   grid-area: text1;
   padding: 30px;
+  display:flex;
+  justify-content: center;
 }
 
 .gridicons {
