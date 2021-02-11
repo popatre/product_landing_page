@@ -6,6 +6,7 @@
   height: 150px;
 }
 
+
 #img-meg, #img-jon, #img-ste {
   max-width: 100%;
   max-height: 100%;
@@ -14,11 +15,11 @@
 }
 
 .logo {
-  background: pink;
+  background-color: #87CEFA;
 }
 
 .nav {
-  background:pink;
+  background-color: #87CEFA;
 }
 
 #nav-bar ul li {
@@ -32,10 +33,12 @@ flex-direction: row;
 justify-content: space-around;
 font-size: 20px;
 flex-wrap:wrap;
-}
-#nav-bar {
 
-  width: 90%;
+}
+
+#nav-bar {
+ position: sticky;
+  width: 100%;
 }
 
 #main {
@@ -168,4 +171,7 @@ flex-wrap:wrap;
 
 #main {
   max-width: 70%;
+}
+html {
+  scroll-behavior: smooth;
 }
